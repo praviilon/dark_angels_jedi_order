@@ -4,10 +4,10 @@ The restored website of Dark Angels Jedi Order (DAJ) Roleplay Clan for the game 
 The original website  (`dajclan.webs.com`) was hosted on webs.com and is no longer accessible.
 It has been restored using Wayback Machine backups.
 
-##Site Structure:
+## Site Structure
 
 ```
-.
+
 ├── index.html                      — Главная
 ├── the-memorial-ground.html        — The Memorial Ground
 ├── saber-forms.html                — Saber Forms
