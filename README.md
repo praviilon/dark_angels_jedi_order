@@ -1,10 +1,10 @@
 # Dark Angels Jedi Order
 
 The restored website of Dark Angels Jedi Order (DAJ) Roleplay Clan for the game Star Wars Jedi Knight 3: Jedi Academy.
-The original website  (`dajclan.webs.com`) was hosted on webs.com.
+The original website  (`dajclan.webs.com`) was hosted on webs.com and is no longer accessible.
 It has been restored using Wayback Machine backups.
 
-Site Structure:
+##Site Structure:
 
 ```
 .
