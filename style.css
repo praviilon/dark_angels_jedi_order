@@ -162,6 +162,7 @@ a:focus-visible, button:focus-visible {
   border: 1px solid var(--line);
   padding: 34px 38px 38px;
   border-radius: 2px;
+  overflow-wrap: break-word;
 }
 
 .panel-corner {
@@ -199,6 +200,8 @@ a:focus-visible, button:focus-visible {
 .panel-body p {
   margin: 0 0 1em;
   color: var(--text);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .panel-body p:last-child { margin-bottom: 0; }
 .panel-body b, .panel-body strong { color: var(--gold); font-weight: 600; }
@@ -209,7 +212,11 @@ a:focus-visible, button:focus-visible {
   padding-bottom: 1px;
 }
 .panel-body i, .panel-body em { color: var(--text-dim); }
-.panel-body a { border-bottom: 1px dotted var(--blue-glow); }
+.panel-body a {
+  border-bottom: 1px dotted var(--blue-glow);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
 .video-wrap {
   position: relative;
