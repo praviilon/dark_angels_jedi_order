@@ -1,12 +1,10 @@
-# Dark Angels Jedi Order — сайт клана
+# Dark Angels Jedi Order
 
-Восстановленная версия сайта **Dark Angels Jedi Order (DAJ)** — Star Wars: Jedi Academy roleplay-клана.
-Оригинальный сайт (`dajclan.webs.com`) хостился на webs.com и перестал быть доступен напрямую;
-контент восстановлен из копий в [Wayback Machine](https://web.archive.org/web/20210307102104/http://www.dajclan.webs.com/)
-и пересобран в виде простого статического сайта на чистом HTML/CSS — без зависимостей от какого-либо движка
-или платформы, кроме браузера.
+The restored website of Dark Angels Jedi Order (DAJ) Roleplay Clan for the game Star Wars Jedi Knight 3: Jedi Academy.
+The original website  (`dajclan.webs.com`) was hosted on webs.com.
+It has been restored using Wayback Machine backups.
 
-## Структура
+Site Structure:
 
 ```
 .
@@ -18,10 +16,10 @@
 ├── daj-downloads.html              — DAJ Downloads
 ├── daj-history.html                — DAJ History
 ├── roleplay-and-duel-guides.html   — Roleplay and Duel Guides
-├── style.css                       — Единый файл стилей
+├── style.css                       — style file
 └── assets/
-    ├── daj-logo.png                 — Логотип клана
-    └── daj-padawan-tree.jpg         — Padawan-Master Tree
+    ├── daj-logo.png                 — Clan logo
+    └── daj-padawan-tree.jpg         — Padawan-Master Tree image
 ```
 
 Сайт не использует сборщики, фреймворки или npm-зависимости — это чистые статические файлы,
