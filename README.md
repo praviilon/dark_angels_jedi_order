@@ -10,7 +10,7 @@ It has been restored using Wayback Machine backups.
 
 ```
 
-├── index.html                      — Главная
+├── index.html                      — Homepage
 ├── the-memorial-ground.html        — The Memorial Ground
 ├── saber-forms.html                — Saber Forms
 ├── daj-constitution.html           — DAJ Constitution
@@ -18,7 +18,7 @@ It has been restored using Wayback Machine backups.
 ├── daj-downloads.html              — DAJ Downloads
 ├── daj-history.html                — DAJ History
 ├── roleplay-and-duel-guides.html   — Roleplay and Duel Guides
-├── style.css                       — style file
+├── style.css                       — Stylesheet
 └── assets/
     ├── daj-logo.png                 — Clan logo
     └── daj-padawan-tree.jpg         — Padawan-Master Tree image
