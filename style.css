@@ -1,0 +1,280 @@
+/* ==========================================================================
+   Dark Angels Jedi Order — restored archive
+   Design: "Jedi temple holocron record" — deep obsidian/blue background,
+   inscribed gold display type, lightsaber-blue accents, corner-bracket
+   panels that read like retrieved archive entries.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg:          #0a0d14;
+  --bg-raised:   #11151f;
+  --bg-panel:    #12161f;
+  --line:        #262c3b;
+  --line-soft:   #1a1f2b;
+  --text:        #d9dce6;
+  --text-dim:    #8891a3;
+  --text-faint:  #5b6478;
+  --gold:        #c9a24b;
+  --gold-soft:   #a9873f;
+  --blue:        #5b95d6;
+  --blue-glow:   rgba(91, 149, 214, 0.35);
+  --max-w:       800px;
+}
+
+* { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(91,149,214,0.10), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* ---------- Brand banner ---------- */
+
+.brand-bar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 26px 24px;
+  text-align: center;
+}
+.brand-link { display: inline-block; }
+.brand-logo {
+  width: min(420px, 82vw);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.55));
+}
+
+/* ---------- Header (sticky nav) ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(10, 13, 20, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.logo-compact {
+  display: none;
+  color: var(--text);
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  margin-right: auto;
+}
+.logo-compact:hover { text-decoration: none; }
+.accent { color: var(--gold); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.main-nav a {
+  display: inline-block;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.main-nav a:hover {
+  color: var(--text);
+  background: var(--bg-raised);
+  text-decoration: none;
+}
+.main-nav a.active {
+  color: var(--gold);
+  background: rgba(201, 162, 75, 0.09);
+}
+
+/* ---------- Layout ---------- */
+
+.content { padding: 56px 24px 40px; }
+.content-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ---------- Panels (archive record cards) ---------- */
+
+.panel {
+  position: relative;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  padding: 34px 38px 38px;
+  border-radius: 2px;
+}
+
+.panel-corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--gold-soft);
+  opacity: 0.7;
+}
+.panel-corner.tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+.panel-corner.tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+.panel-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+.panel-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+.panel-eyebrow {
+  margin: 0 0 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.panel h2 {
+  margin: 0 0 18px;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  border-bottom: 1px solid var(--line-soft);
+  padding-bottom: 16px;
+}
+
+.panel-body p {
+  margin: 0 0 1em;
+  color: var(--text);
+}
+.panel-body p:last-child { margin-bottom: 0; }
+.panel-body b, .panel-body strong { color: var(--gold); font-weight: 600; }
+.panel-body u {
+  text-decoration: none;
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold-soft);
+  padding-bottom: 1px;
+}
+.panel-body i, .panel-body em { color: var(--text-dim); }
+.panel-body a { border-bottom: 1px dotted var(--blue-glow); }
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 560 / 315;
+  margin: 4px 0 18px;
+  border: 1px solid var(--line);
+}
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tree-figure {
+  margin: 6px 0 20px;
+  padding: 0;
+}
+.tree-figure a { border-bottom: none; display: inline-block; }
+.tree-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.tree-figure figcaption {
+  margin-top: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 24px 40px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+.site-footer p { margin: 4px 0; }
+.site-footer .small {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 760px) {
+  .brand-bar { padding: 18px 20px; }
+  .brand-logo { width: min(320px, 78vw); }
+  .logo-compact { display: inline-block; }
+  .nav-toggle { display: inline-block; }
+  .header-inner { justify-content: space-between; }
+  .main-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; align-items: flex-start; gap: 2px; padding: 4px 0 16px; }
+  .panel { padding: 26px 20px 30px; }
+  .panel h2 { font-size: 1.25rem; }
+}
