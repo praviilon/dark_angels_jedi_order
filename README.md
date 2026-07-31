@@ -31,7 +31,3 @@ static hosting service, including GitHub Pages.
 Each page is a regular HTML file. Text lives inside `<section class="panel">…</section>`
 blocks. To change the text, open the relevant `.html` file in any text editor and edit
 the content between the `<p>…</p>` tags.
-
-## Deploying to GitHub Pages
-
-See the instructions provided separately (or the "Deploy" section in the chat history).
