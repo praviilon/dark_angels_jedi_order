@@ -22,7 +22,7 @@ It has been restored using Wayback Machine backups.
 ├── style.css                       — Stylesheet
 └── assets/
     ├── daj-logo.png                 — Clan logo
-    └── daj-padawan-tree.jpg         — Padawan-Master Tree image
+    └── daj-padawan-tree.svg         — Padawan-Master Tree image
 ```
 
 The site doesn't use any build tools, frameworks, or npm dependencies — it's plain static
