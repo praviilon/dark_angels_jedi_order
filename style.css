@@ -236,13 +236,17 @@ a:focus-visible, button:focus-visible {
   margin: 6px 0 20px;
   padding: 0;
 }
-.tree-figure a { border-bottom: none; display: inline-block; }
-.tree-figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.tree-scroll {
+  overflow-x: auto;
   border: 1px solid var(--line);
-  background: #fff;
+  background: #12161f;
+}
+.tree-scroll a { border-bottom: none; display: inline-block; }
+.tree-scroll img {
+  display: block;
+  width: 1100px;
+  max-width: none;
+  height: auto;
 }
 .tree-figure figcaption {
   margin-top: 10px;
