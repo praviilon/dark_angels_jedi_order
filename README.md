@@ -22,16 +22,16 @@ Site Structure:
     └── daj-padawan-tree.jpg         — Padawan-Master Tree image
 ```
 
-Сайт не использует сборщики, фреймворки или npm-зависимости — это чистые статические файлы,
-которые можно открыть локально (двойным кликом по `index.html`) или разместить на любом
-статическом хостинге, включая GitHub Pages.
+The site doesn't use any build tools, frameworks, or npm dependencies — it's plain static
+files that can be opened locally (by double-clicking `index.html`) or deployed to any
+static hosting service, including GitHub Pages.
 
-## Как обновить контент
+## Updating content
 
-Каждая страница — обычный HTML-файл. Текст лежит внутри блоков `<section class="panel">…</section>`.
-Чтобы изменить текст, откройте нужный `.html` файл в любом текстовом редакторе и отредактируйте
-содержимое между тегами `<p>…</p>`.
+Each page is a regular HTML file. Text lives inside `<section class="panel">…</section>`
+blocks. To change the text, open the relevant `.html` file in any text editor and edit
+the content between the `<p>…</p>` tags.
 
-## Размещение на GitHub Pages
+## Deploying to GitHub Pages
 
-См. инструкцию, приложенную отдельно (или раздел "Deploy" в истории чата).
+See the instructions provided separately (or the "Deploy" section in the chat history).
