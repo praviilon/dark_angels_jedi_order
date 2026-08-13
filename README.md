@@ -1,7 +1,7 @@
 # Dark Angels Jedi Order Website
 
 The restored website of Dark Angels Jedi Order (DAJ) Roleplay Clan for the game Star Wars Jedi Knight 3: Jedi Academy.
-The original website  (`dajclan.webs.com`) was hosted on webs.com and is no longer accessible.
+The original website was hosted on webs.com and is no longer accessible.
 It has been restored using Wayback Machine backups.
 
 - [Link to the restored website](https://praviilon.github.io/dark_angels_jedi_order/index.html)
@@ -26,8 +26,8 @@ It has been restored using Wayback Machine backups.
 ```
 
 The site doesn't use any build tools, frameworks, or npm dependencies — it's plain static
-files that can be opened locally (by double-clicking `index.html`) or deployed to any
-static hosting service, including GitHub Pages.
+files that can be opened locally or deployed to any
+static hosting service.
 
 ## Updating content
 
